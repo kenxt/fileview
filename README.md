@@ -77,6 +77,27 @@ npm run dev
 
 如果你想为 BaseMetas Fileview 实现一个重要功能，需要先按照模板撰写 RFC 文档，按照 BaseMetas Fileview 的[RFC 机制](./rfcs.md) 进行操作，在经过社区讨论完善后才可以进行代码的提交。
 
+特别欢迎以下方向的贡献：
+
+#### 🚀 新文件格式支持
+- 新 CAD 格式
+- 新 3D 格式
+- 新文档格式解析器
+#### ⚡ 性能优化
+- 转换引擎调优
+- 缓存策略优化
+- 异步队列优化
+#### 🔌 存储适配
+- OSS
+- S3
+- MinIO
+- 企业网盘接口
+#### 📚 文档完善
+- 教程
+- 使用案例
+- 架构图
+- 最佳实践
+
 ## 用户交流
 
 您可以使用 [Discussions](https://github.com/basemetas/fileview/discussions) 功能发起交流

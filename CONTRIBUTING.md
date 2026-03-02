@@ -10,27 +10,28 @@
 
 首先把 fileview 仓库 fork 一份到自己的 Github，然后从个人仓库把项目 clone 到本地，项目默认是 `main` 分支。
 
-然后依次在项目根目录运行以下命令：
+具体步骤：进入项目根目录运行以下命令：
 
 ```bash
-# clone 代码，包含子仓库
+# step 1：clone 代码，包含子仓库
 git clone --recurse-submodules https://github.com/your/fileview.git
 
-# 使用容器启动服务端开发环境，需要先安装并启动 docker 服务
+# step 2：使用容器启动服务端开发环境，需要先安装并启动 docker 服务
+# 也可以在 IDE 中启动开发环境，如 vscode
+# vscode 中打开服务端项目目录 fileview-backend ，点击左下角"在容器中重新打开"
 cd fileview-backend
 docker compose up
 docker exec -it fileview-backend /bin/bash
 
-# 以上也可以在 IDE 中启动开发环境，如 vscode
-# vscode 中打开服务端项目根目录，点击左下角"在容器中重新打开"
-
-# 进入容器，启动预览服务和转换服务
+# step 3：进入容器，启动预览服务和转换服务
+# 如果是 vscode 的容器化开发环境，会自动进入对应目录
 cd /var/app/fileview-backend
 chmod +x ./*.sh
 ./start-preview.sh
 ./start-convert.sh
 
-# 安装并启动前端开发环境，需要先安装 nodejs LTS 版本，如 nodejs v24+
+# step 4：安装并启动前端开发环境，需要先安装 nodejs LTS 版本，如 nodejs v24+
+# 前端项目在本机直接运行，不建议使用容器化环境，否则开发阶段性能会下降
 cd fileview-frontend
 npm i
 npm run dev
@@ -56,7 +57,7 @@ Fileview 项目采用前后端分离架构，主要包含两个模块：
 # 后端开发模式启动转换服务
 ./start-convert.sh
 
-# 前端开发模式启动
+# 前端开发模式启动，会自动打开默认浏览器 8700 端口
 npm run dev
 ```
 
