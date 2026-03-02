@@ -36,7 +36,7 @@
 
 - https://github.com/basemetas/fileview
 
-## 一键启动容器
+## 启动容器
 
 ```bash
 docker pull basemetas/fileview:latest
