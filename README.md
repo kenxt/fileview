@@ -36,6 +36,19 @@
 
 - https://github.com/basemetas/fileview
 
+## 一键启动容器
+
+```bash
+docker pull basemetas/fileview:latest
+
+docker run -itd \
+    --name fileview \
+    -p 9000:80 \
+    --restart=always \
+    basemetas/fileview:latest
+# 访问 http://ip:9000/
+```
+
 ## 本地运行
 
 ```bash
