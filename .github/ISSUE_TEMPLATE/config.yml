@@ -1,11 +1,10 @@
 blank_issues_enabled: false
 
 contact_links:
-
-  - name: 📚 文档问题 Docs Issue
-    url: https://github.com/basemetas/fileview.basemetas.cn/issues/new
-    about: 文档相关问题
-
   - name: 💬 社区支持 General Question
     url: https://github.com/basemetas/fileview/discussions
     about: 发布一般性问题
+
+  - name: 📚 文档问题 Docs Issue
+    url: https://github.com/basemetas/fileview.basemetas.cn/issues/new
+    about: 官方文档相关问题

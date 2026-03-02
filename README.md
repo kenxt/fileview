@@ -1,6 +1,15 @@
-# BaseMetas Fileview
+<div align="center">
+  <h1> BaseMetas Fileview 在线文件预览引擎</h1>
+  <p>新一代通用型在线文件预览引擎，全格式覆盖，跨平台，零依赖</p>
+  <a href="https://hub.docker.com/r/basemetas/fileview/tags"><img alt="Docker Image Version (tag)" src="https://img.shields.io/docker/v/basemetas/fileview/latest"></a>
+  <a href="https://github.com/BaseMetas/fileview/blob/main/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/BaseMetas/fileview"></a>
+  <a href="https://hub.docker.com/r/basemetas/fileview/tags"><img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/basemetas/fileview"></a>
+  <a href="https://github.com/BaseMetas/fileview/graphs/contributors"><img src="https://img.shields.io/github/contributors/BaseMetas/fileview?style=flat-square" alt="contributors"></a>
+  <a href="https://github.com/BaseMetas/fileview/commits"><img src="https://img.shields.io/github/commit-activity/w/BaseMetas/fileview?style=flat-square" alt="commit activity"></a>
+  <a href="https://github.com/BaseMetas/fileview/issues"><img src="https://img.shields.io/github/issues-closed/BaseMetas/fileview?style=flat-square" alt="closed issues"></a>
+</div>
 
-## 新一代通用型在线文件预览引擎
+## 特性
 
 #### 全格式覆盖，一套能力支撑所有文档场景
 
@@ -18,14 +27,57 @@
 
 无需依赖本地 Office 环境，也无需安装任何浏览器插件，即可通过浏览器实现文档在线预览，部署与使用更加轻量、可靠。
 
-## 站点
+## 相关站点
 
-https://fileview.basemetas.cn
-
-## 在线体验
-
-https://file.basemetas.cn
+- 官方文档 https://fileview.basemetas.cn
+- 在线体验 https://file.basemetas.cn
 
 ## 开源地址
 
-目前产品正在打磨细节，做开源前的准备，预计在 2026 年一季度开源。
+- https://github.com/basemetas/fileview
+
+## 本地运行
+
+```bash
+# clone 代码，包含子仓库
+git clone --recurse-submodules https://github.com/basemetas/fileview.git
+
+# 使用容器启动服务端开发环境，需要先安装并启动 docker 服务
+cd fileview-backend
+docker compose up
+docker exec -it fileview-backend /bin/bash
+
+# 以上也可以在 IDE 中启动开发环境，如 vscode
+# vscode 中打开服务端项目根目录，点击左下角“在容器中重新打开”
+
+# 进入容器，启动预览服务和转换服务
+cd /var/app/fileview-backend
+chmod +x ./*.sh
+./start-preview.sh
+./start-convert.sh
+
+# 安装并启动前端开发环境，需要先安装 nodejs LTS 版本，如 nodejs v24+
+cd fileview-frontend
+npm i
+npm run dev
+
+```
+
+## 问题反馈与建议
+
+在提 issue 前请确保满足以下条件：
+
+- 必须是一个 bug 或者功能新增。
+- 已经在 issue 中搜索过，并且没有找到相似的 issue 或者解决方案。
+
+> 强烈推荐阅读 [《如何向开源社区提问题》](https://github.com/seajs/seajs/issues/545) 和 [《如何有效地报告 Bug》](http://www.chiark.greenend.org.uk/%7Esgtatham/bugs-cn.html)、[《如何向开源项目提交无法解答的问题》](https://zhuanlan.zhihu.com/p/25795393)，更好的问题更容易获得帮助。
+
+## 贡献指南
+我们非常欢迎社区开发者为 BaseMetas Fileview 贡献代码，在贡献之前请先阅读[贡献指南](./CONTRIBUTING.md)。
+
+如果你想为 BaseMetas Fileview 实现一个重要功能，需要先按照模板撰写 RFC 文档，按照 BaseMetas Fileview 的[RFC 机制](./rfcs.md) 进行操作，在经过社区讨论完善后才可以进行代码的提交。
+
+## 用户交流
+
+您可以使用 [Discussions](https://github.com/basemetas/fileview/discussions) 功能发起交流
+
