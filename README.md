@@ -1,11 +1,10 @@
 <div align="center">
   <h1> BaseMetas Fileview 在线文件预览引擎</h1>
   <p>新一代通用型在线文件预览引擎，全格式覆盖，跨平台，零依赖</p>
-  <a href="https://hub.docker.com/r/basemetas/fileview/tags"><img alt="Docker Image Version (tag)" src="https://img.shields.io/docker/v/basemetas/fileview/latest"></a>
   <a href="https://github.com/BaseMetas/fileview/blob/main/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/BaseMetas/fileview"></a>
+  <a href="https://hub.docker.com/r/basemetas/fileview/tags"><img alt="Docker Image Version (tag)" src="https://img.shields.io/docker/v/basemetas/fileview/latest"></a>
+  <a href="https://github.com/BaseMetas/fileview/stargazers"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/BaseMetas/fileview?style=flat-square"></a>
   <a href="https://hub.docker.com/r/basemetas/fileview/tags"><img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/basemetas/fileview"></a>
-  <a href="https://github.com/BaseMetas/fileview/graphs/contributors"><img src="https://img.shields.io/github/contributors/BaseMetas/fileview?style=flat-square" alt="contributors"></a>
-  <a href="https://github.com/BaseMetas/fileview/commits"><img src="https://img.shields.io/github/commit-activity/w/BaseMetas/fileview?style=flat-square" alt="commit activity"></a>
   <a href="https://github.com/BaseMetas/fileview/issues"><img src="https://img.shields.io/github/issues-closed/BaseMetas/fileview?style=flat-square" alt="closed issues"></a>
 </div>
 
